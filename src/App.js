@@ -1,26 +1,21 @@
-import React from 'react';
-import './App.css'
-
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    <div className='app-wrapper'>
-      <header className='header'>
-        <img src='https://avatars.mds.yandex.net/i?id=3b84ba0a875426c558f8592865b5fa51-5296782-images-thumbs&n=13'/>
-      </header>
-      <nav className='nav'>
-        <div>
-          Profile
-        </div>
-        <div>
-          Messages
-        </div>
-      </nav>
-      <div className='content'>
-        Main content
-      </div>
+    <div className="app-wrapper">
+
+      <Header />
+
+      <Navbar />
+      
+      <Profile />
+      
     </div>
-  )
+  );
 }
 
 export default App;
