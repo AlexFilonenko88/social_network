@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div className={P.content}>
       <div>
-        <img src="https://www.ejin.ru/wp-content/uploads/2019/05/gora-6.jpg" />
+        <img src="https://www.ejin.ru/wp-content/uploads/2019/05/gora-6.jpg" alt="" />
       </div>
       <div>avatar + description</div>
       <MyPosts />

@@ -14,9 +14,8 @@ const MyPosts = () => {
         </div>
       </div>
       <div className={MP.posts}>
-        <Post />
-        <Post />
-        <Post />
+        <Post message='WWWWWWW' like="15"/>
+        <Post message='QIQIQIQIQIQI' like="10"/>
       </div>
     </div>
   );

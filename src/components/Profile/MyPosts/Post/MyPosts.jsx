@@ -13,9 +13,11 @@ const MyPosts = () => {
         </div>
       </div>
       <div className={MP.posts}>
-        <div className={MP.item}>
-        
-        Post 1</div><img src="https://w-dog.ru/wallpapers/1/59/538931223085784/smajl-naushniki-3-j.jpg" alt="image" />
+        <div className={MP.item}>Post 1</div>
+        <img
+          src="https://w-dog.ru/wallpapers/1/59/538931223085784/smajl-naushniki-3-j.jpg"
+          alt="image_post"
+        />
         <div className={MP.item}>Post 2</div>
         <div className={MP.item}>Post 3</div>
       </div>
