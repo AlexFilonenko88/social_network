@@ -2,9 +2,15 @@
     width: auto;
     grid-area: n;
     background-color: burlywood;
+    padding: 20px;
   }
 
-.item a {
+.item {
   text-decoration: none;
   color: white;
+}
+
+.active {
+  color: gold;
+  text-decoration: none;
 }
