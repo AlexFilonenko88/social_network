@@ -4,10 +4,10 @@ import N from './Navbar.module.css';
 const Navbar = () => {
     return <nav className={N.nav}>
     <div className={N.item}>
-      <a href='#'>Profile</a>
+      <a href='/profile'>Profile</a>
     </div>
     <div className={N.item}>
-      <a href='#'>Messages</a>
+      <a href='/dialogs'>Messages</a>
     </div>
     <div className={N.item}>
       <a href='#'>News</a>
