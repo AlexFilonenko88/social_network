@@ -2,13 +2,13 @@ import React from "react";
 import MP from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
   let posts = [
     { id: 1, message: "Hi, how are you?", like: 15 },
     { id: 2, message: "Its my first post", like: 11 },
   ];
 
-  let postsElement = posts.map((p) => (
+  let postsElements = posts.map((p) => (
     <Post message={p.message} like={p.like} />
   ));
 
@@ -26,7 +26,7 @@ const MyPosts = () => {
           <button>Remove</button>
         </div>
       </div>
-      <div className={MP.posts}>{postsElement}</div>
+      <div className={MP.posts}>{postsElements}</div>
     </div>
   );
 };

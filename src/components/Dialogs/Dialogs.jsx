@@ -12,8 +12,8 @@ const DialogsItem = ({ name, id }) => {
   );
 };
 
-const Message = ({ message }) => {
-  return <div className={D.message}>{message}</div>;
+const Message = (props) => {
+  return <div className={D.message}>{props.message}</div>;
 };
 
 const Dialogs = (props) => {
@@ -43,21 +43,8 @@ const Dialogs = (props) => {
 
   return (
     <div className={D.dialogs}>
-      <div className={D.dialogs_items}>
-        {dialogsElements}
-        {/* <DialogsItem name="Alex" id="1" />
-        <DialogsItem name="Andrey" id="2" />
-        <DialogsItem name="Max" id="3" />
-        <DialogsItem name="Sveta" id="4" />
-        <DialogsItem name="Valera" id="5" />
-        <DialogsItem name="Viktor" id="6" /> */}
-      </div>
-      <div className={D.messages}>
-        {messagesElements}
-        {/* <Message message="Hi" />
-        <Message message="How is your WWW?" />
-        <Message message="Yo!" /> */}
-      </div>
+      <div className={D.dialogs_items}>{dialogsElements}</div>
+      <div className={D.messages}>{messagesElements}</div>
     </div>
   );
 };
