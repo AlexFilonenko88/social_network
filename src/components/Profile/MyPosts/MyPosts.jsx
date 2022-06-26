@@ -9,7 +9,7 @@ const MyPosts = (props) => {
   ];
 
   let postsElements = posts.map((p) => (
-    <Post message={p.message} like={p.like} />
+    <Post message={p.message} like={p.like} key={p.id} />
   ));
 
   return (
