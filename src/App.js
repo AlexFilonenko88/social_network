@@ -22,7 +22,11 @@ function App(props) {
             <Route
               path="/profile"
               element={
-                <Profile posts={props.appState.posts} addPost={props.addPost} />
+                <Profile
+                  profilePage={props.appState.profilePage}
+                  addPost={props.addPost}
+                  updateNewPostsText={props.updateNewPostsText}
+                />
               }
             />
             <Route path="/dialogs/*" element={<Dialogs />} />
