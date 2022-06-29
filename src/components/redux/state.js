@@ -1,3 +1,5 @@
+// import { rerenderEntireTree } from "../../index";
+
 let state = {
   posts: [
     { id: 1, message: "Hi, how are you?", like: 15 },
@@ -13,6 +15,7 @@ export let addPost = (postMessage) => {
   };
 
   state.posts.push(newPost);
+  // rerenderEntireTree(state);
 };
 
 export default state;
