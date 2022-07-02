@@ -4,8 +4,8 @@ import D from "./Dialogs.module.css";
 import {
   sendMessageCreator,
   updateNewMessageBodyCreator,
-} from "../redux/state";
-import { sendMessageCreator } from "../redux/state";
+} from "../redux/dialogs-reducer";
+// import { sendMessageCreator } from "../redux/state";
 
 const DialogsItem = ({ name, id }) => {
   let path = "/dialogs/" + id;
@@ -37,8 +37,6 @@ const Dialogs = (props) => {
     { id: 3, message: "Yo!" },
     { id: 4, message: "Yo!" },
   ];
-
-  // let newMessageBody: "";
 
   let state = props.store.getState().dialogsPage;
 
